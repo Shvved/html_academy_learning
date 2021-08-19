@@ -130,7 +130,6 @@ h2, h3 {
     padding: 0;
     display: flex;
     justify-content: space-between;
-
 }
 
 .feature-item {
@@ -206,7 +205,9 @@ h2, h3 {
 }
 
 .popular h2,
-.steps-for-ideal h2 {
+.steps-for-ideal h2,
+.news h2,
+.reviews h2 {
     margin-bottom: 36px;
 
     font-family: "Playfair Display", "Arial", sans-serif;
@@ -316,14 +317,16 @@ h2, h3 {
 }
 
 .catalogue-item a {
+    height: 442px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 442px;
-    text-align: center;
     color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+
 }
 
 .catalogue-item h3 {
@@ -353,20 +356,218 @@ background-image: url(./img/weddings-bouquet.jpg);
 }
 
 .catalogue-item:nth-child(2){
-    background-image: url(./img/weddings-bouquet.jpg);
+    background-image: url(./img/peony-bouquet.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
 .catalogue-item:nth-child(3){
-    background-image: url(./img/weddings-bouquet.jpg);
+    background-image: url(./img/select-bouquet.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
 /* скидка */
 .sale {
-    background-color:
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: 1200px;
+    height: 391px;
+    display: flex;
+    position: relative;
+    color: #ffffff;
+    background-color: #AE7C78;
+
+}
+
+.sale h2 {
+    width: 468px;
+    margin: 40px 20px 24px 102px;
+    font-family: "Playfair Display", "Arial", sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 58.65px;
+}
+.sale p,
+.news p {
+    width: 387px;
+    margin: 0 121px 64px 102px;
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.sale::after {
+    content: " ";
+
+    position: absolute;
+    right: 0px;
+
+    width: 590px;
+    height: 391px;
+
+    background-image: url(./img/img-for-sale.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+/* 4 шага */
+
+.steps-for-ideal {
+    margin: 0 120px 80px 120px;
+    height: 232px;
+}
+
+.steps-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.step-item {
+    width: 285px;
+    position: relative;
+    padding-top: 60px;
+}
+
+.step-order::before {
+    content: " ";
+
+    position: absolute;
+    top: 0;
+    left: calc(100%/2 - 66.08px/2);
+
+    width: 66.08px;
+    height: 52px;
+
+    background-image: url("img/order.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.step-details::before {
+    content: " ";
+
+    position: absolute;
+    top: 0;
+    left: calc(100%/2 - 37.49px/2);
+
+    width: 37.49px;
+    height: 52px;
+
+    background-image: url("./img/details.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.step-pay::before {
+    content: " ";
+
+    position: absolute;
+    top: 0;
+    left: calc(100%/2 - 69.93px/2);
+
+    width: 69.93px;
+    height: 52px;
+
+    background-image: url("./img/pay.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.step-delivery::before {
+    content: " ";
+
+    position: absolute;
+    top: 0;
+    left: calc(100%/2 - 82.21px/2);
+
+    width: 82.21px;
+    height: 52px;
+
+    background-image: url("./img/delivery_ico.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+/* новости */
+.news {
+    width: 1200px;
+    height: 462px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+    display:flex;
+
+}
+
+.news h2 {
+    width: 487px;
+    text-align: left;
+    margin: 72px 0 40px;
+}
+
+.news p {
+    margin-left: 0;
+    margin-bottom: 40px;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+    width: 96.76px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.news-img-wrapper {
+    width: 692px;
+
+    background: url("./img/news-img1.jpg") left top no-repeat, url("./img/news-img2.jpg") left bottom no-repeat, url("./img/news-img3.jpg") right top no-repeat;
+    background-size:  285px 220px, 285px 220px, 387px 460px;
+}
+
+/* отзывы */
+.reviews {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    border: 1px solid #AE7C78;
+}
+
+.reviews h2 {
+    margin: 40px 0;
+}
+
+.reviews-list {
+    margin: 0;
+    margin-bottom: 63px;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.review-item {
+    width: 300px;
+}
+
+.review-item figure{
+    margin: 0;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+.review-item blockquote {
+    margin: 0 0 16px;
+}
+
+.review-item figcaption {
+    font-weight: 500;
 }
 
 .button {
